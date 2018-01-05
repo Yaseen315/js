@@ -1,0 +1,57 @@
+
+
+
+
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(22, 148, 96, 0.801)
+    
+}
+
+
+.clock {
+    width: 800px;
+    height: 800px;
+    background-color: aliceblue;
+    border-radius: 100%;
+ 
+    
+}
+
+.hours {
+    background: rgba(13, 14, 13, 0.801);
+    height: 30%;
+    left: 48.75%;
+    position: absolute;
+    top: 20%;
+    transform-origin: 50% 100%;
+    width: 2.5%;
+  }
+
+  .minutes {
+    background: rgb(194, 49, 49);
+    height: 35%;
+    left: 49%;
+    position: absolute;
+    top: 15%;
+    transform-origin: 50% 100%;
+    width: 2%;
+  }
+
+  .seconds {
+    background: rgb(22, 7, 151);
+    height: 33%;
+    left: 49.5%;
+    position: absolute;
+    top: 17%;
+    transform-origin: 50% 100%;
+    width: 1%;
+    z-index: 8;
+    transition: all 0.5s;
+    /* transform:rotate(60deg); */
+    transition-timing-function:cubic-bezier(0.51, 2.29, 0.58, 1)
+  }
